@@ -122,6 +122,16 @@ class _AutenticacaoTelaState extends State<AutenticacaoTela> {
                       ),
                       const SizedBox(height: 10),
                       ElevatedButton(
+                        style: ButtonStyle(
+                          backgroundColor: MaterialStatePropertyAll(
+                            Colors.blue.shade900,
+                          ),
+                          shape: MaterialStateProperty.all(
+                            RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                          ),
+                        ),
                         onPressed: () {
                           botaoPrincipalClicado();
                         },
